@@ -1,0 +1,16 @@
+html, body {
+   height: 100%;  
+}
+#container {
+  position:relative;    
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+  height: 100%;
+    
+}
+svg {
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+}
