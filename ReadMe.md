@@ -1,15 +1,17 @@
-This is a simple scatterplot using the D3.js library.
+This is a simple scatterplot showing the global temperature from 1753 to 2015 
+using the D3.js library.
 
 D3 Notes
 
-1. In this project I used the attr() and style() methods and not the
-attrs() and styles() method to avoid making an extra call to the server
-for this seperate d3 library (3-selection-multi)
+1. The order of the elements appended on svg is very important and can cause
+strange behaviour if it is not the correct one.
 
-2. Hovering over a circle fires the appearance of tooltip.
-To create this tooltip I created a group element (gCont) on which I appended
-a rectangle (tooltip). Then on each mouseover a circle the function fired
-changed the opacity of the rectangle from 0 to 1 while it also created
-the 3 texts and appended them to the group element (gCont).
-On mouseout the function triggered removed the texts and changed the opacity
-of the rectangle from 1 to 0.
+
+2. Hovering over a rectangle causes the appearance of a tooltip
+In this project I extended the functionality of the tooltip I created
+in my previous D3.js project (dopingInProfessionalCycling) by changing 
+the position of the tooltip to position it close to rectangle being hovered.
+The other details are similar to those of the previous project
+
+Links
+http://stackoverflow.com/questions/26127550/how-can-i-draw-overlapping-graphics-in-d3-js

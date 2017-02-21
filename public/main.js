@@ -100,7 +100,7 @@
                       tooltip.attr('x', toolTipPosX  ).attr('y', toolTipPosY )  ;
 //Year : Month
                       gCont.append('text').attr('id','yearMonth').text(yearMonth).attr('x',toolTipPosX +  toolWidth/2  ).attr('y', toolTipPosY + 20 ).attr('text-anchor','middle').attr("fill","white").style('font-size','20px').style('font-weight','600');                    
-//                    //temp in Celcius
+//temp in Celcius
                       gCont.append('text').attr('id','temperature').text(temperature).attr('x',toolTipPosX + toolWidth/2  ).attr('y', toolTipPosY + 40).attr('text-anchor','middle').attr("fill","white").style('font-size','16px').style('font-weight','600'); 
 //Variance 
                       gCont.append('text').attr('id','variance').text(variance).attr('x',toolTipPosX +  toolWidth/2  ).attr('y', toolTipPosY + 58).attr('text-anchor','middle').attr("fill","white").style('font-size','16px');
@@ -109,8 +109,7 @@
                       tooltip.style('opacity','0');
                       document.getElementById('yearMonth').remove();
                       document.getElementById('temperature').remove();
-                      document.getElementById('variance').remove();  
-//                
+                      document.getElementById('variance').remove();                  
                     })                           
 //Tooltip        
                const gCont = svg.append('g').attr('transform', "translate(0,0)")
